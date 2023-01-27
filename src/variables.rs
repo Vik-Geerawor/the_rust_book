@@ -1,6 +1,5 @@
 /// variables are immutable by default
 /// to make them mutable use the `mut` keyword
-
 pub fn variables() {
     println!("******************************");
     println!("*** Variables ***");
@@ -34,5 +33,6 @@ pub fn shadowing() {
 
     let x = x + 1;
     // let x += 1;                         //ERROR: can't reassign to an uninitialized variable
-    println!("'let x = x + 1' = {}", x)
+    println!("'let x = x + 1' = {}", x);
+    println!("let x += 1 - ERROR - can't reassign to an uninitialized variable");
 }
